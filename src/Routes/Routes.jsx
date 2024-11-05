@@ -46,8 +46,9 @@ const routes = createBrowserRouter([
           element: <UpComing></UpComing>,
         },
         {
-          path:'/details',
+          path:'/card/:product_id',
           element: <Details></Details>,
+          loader:()=> fetch('../../public/gadgets.json')
         },
       ]
     },

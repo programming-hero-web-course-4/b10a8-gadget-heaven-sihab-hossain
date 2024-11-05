@@ -6,7 +6,7 @@ const Navbar = () => {
   const location = useLocation();
  
   return (
-    <div className={`${location.pathname==='/'? "bg-[#9538E2]":"bg-white text-gray-950"} container mx-auto navbar  text-white rounded-t-2xl p-5 `}>
+    <div className={`${location.pathname==='/'? "bg-[#9538E2]":"bg-white text-gray-950"} container mx-auto navbar  text-white rounded-t-2xl p-5`}>
       <div className="navbar-start">
         
         <a className="text-2xl font-semibold">Gadget Heaven</a>

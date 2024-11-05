@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 
 const Card = ({ gadget }) => {
-  const { price, product_image, product_title } = gadget || {};
+  const { price, product_image, product_title,product_id } = gadget || {};
 
   return (
     <div>
@@ -14,11 +14,11 @@ const Card = ({ gadget }) => {
             alt="gadget"
           />
         </figure>
-        <div className="card-body">
+        <div className="card-body ">
           <h2 className="card-title">{product_title}</h2>
           <p>Price: {price}</p>
           <div className="card-actions justify-end">
-            <Link to={'/details'} onClick={price} className="btn bg-none border border-purple-500 rounded-full text-purple-600 hover:bg-purple-500 hover:text-white">
+            <Link to={`/card/${product_id}`}  className="btn bg-none border border-purple-500 rounded-full text-purple-600 hover:bg-purple-500 hover:text-white">
               View Details
             </Link>
           </div>
