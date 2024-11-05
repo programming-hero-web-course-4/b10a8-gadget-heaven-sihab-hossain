@@ -1,0 +1,207 @@
+[
+    {
+      "product_id": "101",
+      "product_title": "Galaxy S21 Ultra",
+      "product_image": "https://i.ibb.co.com/KGY9Zxb/download.jpg",
+      "category": "Mobile",
+      "price": 1199.99,
+      "description": "The Samsung Galaxy S21 Ultra features a 6.8-inch display with a 108MP primary camera and 5000mAh battery.",
+      "Specification": [
+        "Display: 6.8 inches, 3200x1440 pixels",
+        "Camera: 108 MP primary, 40 MP front",
+        "Battery: 5000 mAh",
+        "Storage: 128GB / 256GB / 512GB",
+        "OS: Android 11"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "102",
+      "product_title": "MacBook Pro 14-inch",
+      "product_image": "https://i.ibb.co.com/MSkpNmP/download-1.jpg",
+      "category": "Laptop",
+      "price": 1999.00,
+      "description": "Apple's MacBook Pro with M1 Pro chip, 14-inch Liquid Retina XDR display, and 16GB of RAM.",
+      "Specification": [
+        "Display: 14.2 inches, 3024x1964 pixels",
+        "Processor: Apple M1 Pro",
+        "RAM: 16GB",
+        "Storage: 512GB SSD",
+        "Battery Life: Up to 17 hours"
+      ],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "103",
+      "product_title": "Apple Watch Series 7",
+      "product_image": "https://i.ibb.co.com/T1Pv3V0/download-2.jpg",
+      "category": "Smartwatch",
+      "price": 399.00,
+      "description": "The Apple Watch Series 7 with 1.9-inch Retina display, ECG, and blood oxygen sensors.",
+      "Specification": [
+        "Display: 1.9 inches, Always-On Retina",
+        "Water Resistance: WR50 (50 meters)",
+        "Sensors: ECG, Blood Oxygen, Heart Rate",
+        "Battery Life: Up to 18 hours",
+        "OS: watchOS 8"
+      ],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "104",
+      "product_title": "Sony WH-1000XM4 Wireless Headphones",
+      "product_image": "https://i.ibb.co.com/MfSH3MN/download-3.jpg",
+      "category": "Accessories",
+      "price": 349.99,
+      "description": "Industry-leading noise-canceling wireless headphones with 30 hours of battery life.",
+      "Specification": [
+        "Type: Over-Ear",
+        "Noise Cancelling: Yes",
+        "Battery Life: Up to 30 hours",
+        "Bluetooth: Version 5.0",
+        "Microphone: Built-in"
+      ],
+      "availability": false,
+      "rating": 4.6
+    },
+    {
+      "product_id": "105",
+      "product_title": "Dell XPS 13",
+      "product_image": "https://i.ibb.co.com/G9RSKr3/download-4.jpg",
+      "category": "Laptop",
+      "price": 1299.99,
+      "description": "The Dell XPS 13 with 11th Gen Intel Core processor, 13.3-inch display, and 16GB of RAM.",
+      "Specification": [
+        "Display: 13.3 inches, 1920x1080 pixels",
+        "Processor: Intel Core i7-1185G7",
+        "RAM: 16GB",
+        "Storage: 512GB SSD",
+        "Battery Life: Up to 12 hours"
+      ],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "106",
+      "product_title": "iPhone 13 Pro",
+      "product_image": "https://i.ibb.co.com/16wZDft/download-5.jpg",
+      "category": "Mobile",
+      "price": 999.99,
+      "description": "The iPhone 13 Pro with A15 Bionic chip, 6.1-inch Super Retina XDR display, and advanced camera features.",
+      "Specification": [
+        "Display: 6.1 inches, 2532x1170 pixels",
+        "Camera: 12 MP triple camera system",
+        "Battery: 3095 mAh",
+        "Storage: 128GB / 256GB / 512GB / 1TB",
+        "OS: iOS 15"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+        "product_id": "107",
+        "product_title": "Google Pixel 6 Pro",
+        "product_image": "https://i.ibb.co.com/NVfLVDQ/download-6.jpg",
+        "category": "Mobile",
+        "price": 899.00,
+        "description": "Google's Pixel 6 Pro with Google Tensor chip, 6.7-inch display, and 50 MP primary camera.",
+        "Specification": [
+          "Display: 6.7 inches, 3120x1440 pixels",
+          "Camera: 50 MP primary, 12 MP ultrawide",
+          "Battery: 5003 mAh",
+          "Storage: 128GB / 256GB",
+          "OS: Android 12"
+        ],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "108",
+        "product_title": "Samsung Galaxy Watch 4",
+        "product_image": "https://i.ibb.co.com/m9X7JN0/download-7.jpg",
+        "category": "Smartwatch",
+        "price": 249.99,
+        "description": "The Galaxy Watch 4 with advanced health monitoring, body composition measurement, and AMOLED display.",
+        "Specification": [
+          "Display: 1.4 inches, AMOLED",
+          "Water Resistance: IP68",
+          "Sensors: ECG, Blood Pressure, Heart Rate",
+          "Battery Life: Up to 40 hours",
+          "OS: Wear OS powered by Samsung"
+        ],
+        "availability": false,
+        "rating": 4.5
+      },
+      {
+        "product_id": "109",
+        "product_title": "Bose QuietComfort Earbuds",
+        "product_image": "https://i.ibb.co.com/7Ng8NNs/download-8.jpg",
+        "category": "Accessories",
+        "price": 279.00,
+        "description": "Bose QuietComfort earbuds with noise-canceling technology and premium audio experience.",
+        "Specification": [
+          "Type: In-Ear",
+          "Noise Cancelling: Yes",
+          "Battery Life: Up to 6 hours",
+          "Bluetooth: Version 5.1",
+          "Water Resistance: IPX4"
+        ],
+        "availability": true,
+        "rating": 4.4
+      },
+      {
+        "product_id": "110",
+        "product_title": "HP Spectre x360",
+        "product_image": "https://i.ibb.co.com/qWkvTtL/download-9.jpg",
+        "category": "Laptop",
+        "price": 1599.99,
+        "description": "The HP Spectre x360 with a 13.5-inch 3K2K OLED display, Intel Evo platform, and convertible design.",
+        "Specification": [
+          "Display: 13.5 inches, 3000x2000 pixels",
+          "Processor: Intel Core i7-1165G7",
+          "RAM: 16GB",
+          "Storage: 512GB SSD",
+          "Battery Life: Up to 15 hours"
+        ],
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "product_id": "111",
+        "product_title": "Logitech MX Master 3 Mouse",
+        "product_image": "https://i.ibb.co.com/RD0T9pM/download-10.jpg",
+        "category": "Accessories",
+        "price": 99.99,
+        "description": "The Logitech MX Master 3 is a wireless mouse with ergonomic design and precise scrolling.",
+        "Specification": [
+          "Type: Wireless",
+          "Battery Life: Up to 70 days",
+          "Connectivity: Bluetooth, USB-C",
+          "DPI: 4000",
+          "Buttons: 7 customizable buttons"
+        ],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "112",
+        "product_title": "OnePlus 9 Pro",
+        "product_image": "https://i.ibb.co.com/YNh2SyM/download-11.jpg",
+        "category": "Mobile",
+        "price": 969.00,
+        "description": "OnePlus 9 Pro with Hasselblad-tuned camera, 120Hz Fluid Display, and Snapdragon 888 processor.",
+        "Specification": [
+          "Display: 6.7 inches, 3216x1440 pixels",
+          "Camera: 48 MP main, 50 MP ultrawide",
+          "Battery: 4500 mAh",
+          "Storage: 128GB / 256GB",
+          "OS: OxygenOS based on Android 11"
+        ],
+        "availability": true,
+        "rating": 4.6
+      }
+  ]
+  

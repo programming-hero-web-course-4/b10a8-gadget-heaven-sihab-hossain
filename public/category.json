@@ -1,0 +1,27 @@
+[
+   {"product_id": "101",
+      "category": "Mobile",
+      "product_title": "Galaxy S21 Ultra"
+    },
+    {
+      "product_id": "102",
+      "category": "Laptop",
+      "product_title": "MacBook Pro 14-inch"
+    },
+    {
+      "product_id": "103",
+      "category": "Smartwatch",
+      "product_title": "Apple Watch Series 7"
+    },
+    {
+      "product_id": "104",
+      "category": "Accessories",
+      "product_title": "Sony WH-1000XM4 Wireless Headphones"
+    },
+    {
+      "product_id": "105",
+      "category": "TV",
+      "product_title": "Dell XPS 13"
+    }
+  ]
+  
