@@ -8,6 +8,9 @@ import Dashboard from "../Pages/Dashboard";
 import UpComing from "../Pages/UpComing";
 import Cards from "../Components/Cards/Cards";
 import Details from "../Pages/Details";
+import Cart from "../Pages/Cart";
+import Wish from "../Pages/Wish";
+// import Wish from "../Pages/Wish";
 
 const routes = createBrowserRouter([
     {
@@ -30,6 +33,7 @@ const routes = createBrowserRouter([
               element: <Cards></Cards> ,
               loader:()=> fetch('../../public/gadgets.json')
             },
+         
           ]
         },
        
@@ -40,6 +44,16 @@ const routes = createBrowserRouter([
         {
           path:'/dashbord',
           element: <Dashboard></Dashboard>,
+          children:[
+            {
+              path:'/dashbord',
+              element:<Cart></Cart>
+            },
+            {
+              path:"/dashbord/wish",
+              element:<Wish></Wish>
+            }
+          ]  
         },
         {
           path:'/upcoming',
