@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { FiShoppingCart } from "react-icons/fi";
 import { GiRoyalLove } from "react-icons/gi";
-import { addToCart} from "../Utilitis/utilitis";
+import { addToCart, addToWish} from "../Utilitis/utilitis";
 
 
 const Details = () => {
@@ -26,11 +26,13 @@ const Details = () => {
   } = gadgets || {};
 
 
-  const handleClick = (data) => {
+  const handleCartClick = (data) => {
     addToCart(data);
     
   };
-
+  const handleWishClick = (data) =>{
+    addToWish(data)
+  }
 
   return (
     <div className="hero bg-[#9538E2] py-10 relative  w-full pb-36">
@@ -82,12 +84,12 @@ const Details = () => {
           </p>
           <div className="card-actions ">
             <button
-              onClick={() => handleClick(gadgets)}
+              onClick={() => handleCartClick(gadgets)}
               className="btn bg-[#9538E2] text-white text-lg hover:bg-[#9538E2]"
             >
               Add To Card <FiShoppingCart />
             </button>
-            <button onClick={() => handleClick(gadgets)} className="btn border border-gray-500 rounded-full hover:bg-[#9538E2] text-2xl hover:text-white">
+            <button onClick={() => handleWishClick(gadgets)} className="btn border border-gray-500 rounded-full hover:bg-[#9538E2] text-2xl hover:text-white">
               <GiRoyalLove />
             </button>
           </div>

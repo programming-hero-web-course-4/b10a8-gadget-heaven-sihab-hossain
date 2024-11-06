@@ -1,5 +1,6 @@
-// eslint-disable-next-line react/prop-types
-const CartData = ({data}) => {
+/* eslint-disable react/prop-types */
+
+const WishListData = ({data}) => {
     const {
         product_title,
         product_image,
@@ -28,7 +29,7 @@ const CartData = ({data}) => {
         </div>
       </div>
     </div>
-  );
+    );
 };
 
-export default CartData;
+export default WishListData;
