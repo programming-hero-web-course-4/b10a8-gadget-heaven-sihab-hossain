@@ -6,17 +6,17 @@ const Navbar = () => {
   const location = useLocation();
  
   return (
-    <div className={`${location.pathname==='/'? "bg-[#9538E2]":"bg-white text-gray-950"} container mx-auto navbar  text-white rounded-t-2xl p-5`}>
+    <div className={`${location.pathname==='/'? "bg-[#9538E2] text-white":"bg-white text-green-950"} container mx-auto navbar   rounded-t-2xl p-5`}>
       <div className="navbar-start">
         
         <a className="text-2xl font-semibold">Gadget Heaven</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 flex flex-row gap-6 text-[16px]">
-         <NavLink to={'/'}>Home</NavLink >
-         <NavLink to={'/statistics'}>Statistics</NavLink >
-         <NavLink to={'/dashbord'}>Dashbord</NavLink >
-         <NavLink to={'/upcoming'}>UpComing Gadgets</NavLink >
+         <NavLink className={`${location.pathname==='/'? "btn bg-red-500 border-none":"btn bg-red-200 "}`} to={'/'}>Home</NavLink >
+         <NavLink className={`${location.pathname==='/statistics'? "btn bg-red-500 ":"border-none btn bg-red-200 text-black "}`} to={'/statistics'}>Statistics</NavLink >
+         <NavLink className={`${location.pathname==='/dashbord'? "btn bg-red-500":"border-none btn bg-red-200 text-black"}`} to={'/dashbord'}>Dashbord</NavLink >
+         <NavLink className={`${location.pathname==='/upcoming'? "btn bg-red-500":"border-none btn bg-red-200 text-black"}`} to={'/upcoming'}>UpComing Gadgets</NavLink >
         </ul>
       </div>
       <div className="navbar-end gap-4">
