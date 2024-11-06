@@ -13,7 +13,7 @@ const Cart = () => {
         <div className="container mx-auto p-5">
             <div className="flex justify-between">
                 <div>
-                    <h1 className="text-xl font-bold">Cart</h1>
+                    <h1 className="text-2xl font-bold">Cart</h1>
                 </div>
                 <div className="flex justify-center items-center gap-5">
                     <h1 className="text-xl font-bold mr-24">Total cost: </h1>

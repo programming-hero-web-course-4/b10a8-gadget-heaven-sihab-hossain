@@ -3,17 +3,23 @@ import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { FiShoppingCart } from "react-icons/fi";
 import { GiRoyalLove } from "react-icons/gi";
-import { addToCart, addToWish} from "../Utilitis/utilitis";
+import { addToCart, addToWish, getWishListData} from "../Utilitis/utilitis";
 
 
 const Details = () => {
   const data = useLoaderData([]);
   const { product_id } = useParams();
   const [gadgets, setGadgets] = useState([]);
+  const [added, setAdded] = useState(false)
   useEffect(() => {
     const gadget = data.find((gadget) => gadget.product_id == product_id);
     setGadgets(gadget);
-  }, [data, product_id]);
+    const wishData = getWishListData()
+    const isExist = wishData.find (item => item.product_id == gadgets.product_id)
+    if(isExist){
+      setAdded(true)
+    }
+  }, [data, gadgets.product_id, product_id]);
 
   const {
     product_title,
@@ -28,10 +34,11 @@ const Details = () => {
 
   const handleCartClick = (data) => {
     addToCart(data);
-    
+   
   };
   const handleWishClick = (data) =>{
     addToWish(data)
+    setAdded(true)
   }
 
   return (
@@ -89,7 +96,7 @@ const Details = () => {
             >
               Add To Card <FiShoppingCart />
             </button>
-            <button onClick={() => handleWishClick(gadgets)} className="btn border border-gray-500 rounded-full hover:bg-[#9538E2] text-2xl hover:text-white">
+            <button disabled={added} onClick={() => handleWishClick(gadgets)} className="btn border border-gray-500 rounded-full hover:bg-[#9538E2] text-2xl hover:text-white">
               <GiRoyalLove />
             </button>
           </div>
