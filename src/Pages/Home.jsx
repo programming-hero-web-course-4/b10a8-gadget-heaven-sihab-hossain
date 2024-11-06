@@ -1,9 +1,12 @@
 import { useLoaderData } from 'react-router-dom';
 import bannerImg from '../assets/banner.jpg'
 import Categorise from '../Components/Categories/Categorise';
+import { useEffect } from 'react';
 const Home = () => {
   const buttons = useLoaderData ();
-  
+  useEffect(()=>{
+    document.title = "Gadgets | Home" 
+  },[])
   return (
     
     <div className='container mx-auto'>

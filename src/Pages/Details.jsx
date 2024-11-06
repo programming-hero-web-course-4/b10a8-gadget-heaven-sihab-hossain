@@ -1,9 +1,10 @@
-/* eslint-disable no-undef */
+ 
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { FiShoppingCart } from "react-icons/fi";
 import { GiRoyalLove } from "react-icons/gi";
 import { addToCart, addToWish, getWishListData} from "../Utilitis/utilitis";
+
 
 
 const Details = () => {
@@ -34,13 +35,13 @@ const Details = () => {
 
   const handleCartClick = (data) => {
     addToCart(data);
-   
+    
   };
   const handleWishClick = (data) =>{
     addToWish(data)
     setAdded(true)
   }
-
+  
   return (
     <div className="hero bg-[#9538E2] py-10 relative  w-full pb-36">
       <div className="hero-content text-center">
@@ -102,8 +103,10 @@ const Details = () => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 };
 
 export default Details;
+

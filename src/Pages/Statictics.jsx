@@ -1,5 +1,11 @@
+import { useEffect } from "react";
+
 const Statictics = () => {
+  useEffect(()=>{
+    document.title = "Gadgets | Statictics" 
+  },[])
   return (
+    
     <div className="hero bg-[#9538E2] py-10 relative  w-full">
       <div className="hero-content text-center">
         <div className="text-white">

@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import { Link, Outlet } from "react-router-dom";
 // import DashbordBtn from "./DashbordBtn";
 
 const Dashboard = () => {
+  useEffect(()=>{
+    document.title = "Gadgets | Dashboard" 
+  },[])
     return (
        <div>
          <div className="hero bg-[#9538E2] py-10 relative  w-full">
