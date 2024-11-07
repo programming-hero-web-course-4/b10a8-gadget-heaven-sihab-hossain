@@ -16,7 +16,7 @@ const Card = ({ gadget }) => {
         </figure>
         <div className="card-body ">
           <h2 className="card-title">{product_title}</h2>
-          <p>Price: {price}</p>
+          <p>Price:$ {price}</p>
           <div className="card-actions justify-end">
             <Link to={`/card/${product_id}`}  className="btn bg-none border border-purple-500 rounded-full text-purple-600 hover:bg-purple-500 hover:text-white">
               View Details

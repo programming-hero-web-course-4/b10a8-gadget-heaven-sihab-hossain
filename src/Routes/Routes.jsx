@@ -21,17 +21,17 @@ const routes = createBrowserRouter([
         {
           path:'/',
           element: <Home></Home>,
-          loader:()=> fetch('../../public/category.json'),
+          loader:()=> fetch('/category.json'),
           children:[
             {
               path:'/',
               element: <Cards></Cards> ,
-              loader:()=> fetch('../../public/gadgets.json')
+              loader:()=> fetch('/gadgets.json')
             },
             {
               path:'/cards/:cards',
               element: <Cards></Cards> ,
-              loader:()=> fetch('../../public/gadgets.json')
+              loader:()=> fetch('/gadgets.json')
             },
          
           ]
@@ -40,6 +40,7 @@ const routes = createBrowserRouter([
         {
           path:'/statistics',
           element: <Statictics></Statictics>,
+          loader:()=> fetch('/gadgets.json'),
         },
         {
           path:'/dashbord',
@@ -62,7 +63,7 @@ const routes = createBrowserRouter([
         {
           path:'/card/:product_id',
           element: <Details></Details>,
-          loader:()=> fetch('../../public/gadgets.json')
+          loader:()=> fetch('/gadgets.json')
         },
       ]
     },

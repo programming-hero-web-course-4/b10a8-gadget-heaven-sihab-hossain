@@ -1,4 +1,4 @@
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import bannerImg from '../assets/banner.jpg'
 import Categorise from '../Components/Categories/Categorise';
 import { useEffect } from 'react';
@@ -17,7 +17,7 @@ const Home = () => {
             <p className="py-6 text-gray-100 w-3/4 mx-auto">
             Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
             </p>
-            <button className="btn rounded-full bg-white hover:bg-black border-none hover:text-white">Shop Now</button>
+            <Link to={'/dashbord'} className="btn rounded-full bg-white hover:bg-black border-none hover:text-white">Shop Now</Link>
           </div>
         </div>
       </div>
